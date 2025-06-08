@@ -1,0 +1,16 @@
+- this directory contains the skeleton for question 2
+  of the simple regex recursive matcher practice test
+
+- Files include:
+
+parseregex.[ch]:	Translate a regex string into an abstract regex
+			(parseregex.c is incomplete)
+testparseregex.c:	Unit test program for parseregex regex parsing.
+.cbuild:		Custom CB config file to compile the unit test programs
+			and link them against the (working) regex.o from the
+			support library.
+
+- we also depend on ../lib/* for regex.h and other header files, and a support
+  library containing pre-compiled implementations of modules needed.  To remind
+  yourself of the data types defined in regex.h (SimpleType, SimplePat, SPList,
+  etc) look in ../lib (or in ../Part1).

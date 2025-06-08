@@ -1,0 +1,11 @@
+- this directory contains the skeleton for question 1
+  of the simple regex recursive matcher practice test
+
+- Files include:
+
+regex.[ch]:	Abstract regex ADT (regex.c is incomplete)
+testregex.c:	Unit test program for regex ADT
+.cbuild:	Custom CB config file to compile and link the unit
+		test program
+
+- we also depend on ../lib/* for some pre-compiled support modules

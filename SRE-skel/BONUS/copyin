@@ -1,0 +1,6 @@
+#!/bin/sh -
+for d in ../Part*
+do
+	echo $d
+	cp -p $d/*.[ch] .
+done

@@ -1,0 +1,15 @@
+- this directory contains the skeleton for question 3
+  of the simple regex recursive matcher practice test
+
+- Files include:
+
+match.[ch]:	regex pattern matching (match.c is incomplete)
+testmatch.c:	Unit test program for match module
+searchstr.c:	main program that uses regex ADT, parsing and mtching
+		to match a regex against a string
+.cbuild:	Custom CB config file to compile the main programs
+		and link each against match.o here, along with
+		the (sample solution) regex.o and parseregex.o from the
+		support library.
+
+- we also depend on ../lib/*

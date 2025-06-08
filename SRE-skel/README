@@ -1,0 +1,46 @@
+- this directory contains the skeleton for the simple regex
+  recursive matcher practice test.
+
+- Files include:
+
+Part1/README:		 readme file for Part 1
+Part1/regex.[ch]:	 abstract regex types (regex.c is incomplete)
+Part1/testregex.c:	 unit test program for abstrct regex term
+Part1/.cbuild:		 Custom CB config file to compile and link all
+
+Part2/README:		 readme file for Part 2
+Part2/parseregex.[ch]:	 Translate string into an abstract regex
+			 (parseregex.c is incomplete)
+Part2/testparseregex.c:  Unit test program for regex parsing.
+Part2/.cbuild:		 Custom CB config file to compile and link all
+
+Part3/README:		 readme file for Part 3
+Part3/match.[ch]:	 regex string matching and reporting code
+			 (match.c is incomplete)
+Part3/testmatch.c:	 Unit test program for match module
+Part3/searchstr.c:	 Match a regex to a string on the command line
+Part3/.cbuild:		 Custom CB config file to compile and link all
+
+labsearchstr:		 pre-compiled sample solution of searchstr
+summarisetests:		 my C-Tools unit test summariser
+
+lib/*:			 .h files and a library libsupport.a
+		 	 containing pre-compiled modules regex.o,
+			 parseregex.o, match.o (and a support module
+			 called emphasize.o)
+			 You can't see the source code for these modules.
+
+
+Possible invocations of labsearchstr you might like to try:
+
+./labsearchstr 'hello' "hell helloo there"
+./labsearchstr 'hello' "hell halloo there"
+./labsearchstr '^hello' "hell halloo there"
+./labsearchstr '^hello' "helloo there"
+./labsearchstr 'he?llo?' "hell halloo there"
+./labsearchstr 'he?llo?' "hll halloo there"
+./labsearchstr '^he?llo?' "hll halloo there"
+./labsearchstr 'h[eua]l+o*' "hell halloo there"
+./labsearchstr '^h[eua]l+o*' "hell halloo there"
+./labsearchstr 'h[eua]l+o+' "hell halloo there"
+./labsearchstr '^h[eua]l+o+' "hellooooo halloo there"
